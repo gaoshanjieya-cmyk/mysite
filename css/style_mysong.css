@@ -91,7 +91,13 @@ span{
     border-collapse: separate;
     border-spacing: 20px;
     display: block;
-    margin: 70px auto;
+    margin: 50px auto;
+    margin-left: 500px;
+    text-shadow: 
+    0 0 10px #000000,
+    0 0 20px #000000,
+    0 0 40px #000000,
+    0 0 80px #00bfff;
 }
 
 .team td{
