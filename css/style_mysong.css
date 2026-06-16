@@ -10,22 +10,28 @@ body{
     rgba(26, 6, 109, 0.6) 58%,
     rgba(41, 4, 202, 0.6) 86%,
     rgba(144, 34, 0, 0.6));
-    height: 830px;
+    display: block;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sekaowa{
     background-image: url(../images/yozora.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 900px;
     height: 700px;
-    margin: 60px 60px;
+    margin: 60px auto;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sekaowa:hover{
     background-image: url(../images/utyuu.png);
-    transition: all 1s;
     opacity: 0.7;
 }
 
@@ -78,4 +84,36 @@ a:hover{
 span{
     font-family: "DotGothic16", sans-serif;
 }
+
+.team{
+    width: 900px;
+    /* margin: 50px auto; */
+    border-collapse: separate;
+    border-spacing: 20px;
+    display: block;
+    margin: 70px auto;
+}
+
+.team td{
+    width: 160px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.team a{
+    display: block;
+    line-height: 70px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.team td:hover{
+    background-color: rgba(255,255,255,0.3);
+    transform: scale(1.05);
+}
+
 
